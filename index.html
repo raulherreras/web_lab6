@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
       Shopping List
     </title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
   </head>
   <body>
     <div class="container">
@@ -14,13 +18,14 @@
           <label>
             Add an item
           </label>
-          <input type="text" placeholder="e.g., broccoli">
-          <button type="submit">
+          <input type="text" id="inputItemName" placeholder="e.g., broccoli">
+          <button type="submit" id="buttonAddItem">
             Add item
           </button>
       </form>
-      <ul>
+      <ul class="shoppingList">
       </ul>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
